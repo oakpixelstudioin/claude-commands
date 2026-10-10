@@ -17,7 +17,7 @@ In this order:
    (Write, a script output, a render, a download) → the latest one of those.
    That is what "the most recently created file" means to the user.
 3. Otherwise scan with the helper:
-   - no argument → `python ~/.claude/open-it/open_it.py`
+   - no argument → `python ~/.claude/tools/open-it/open_it.py`
    - a type word → `--ext`: `html`→`html,htm`, `pdf`, `video`→`mp4,mov,mkv,webm`,
      `audio`→`mp3,wav,m4a,flac`, `image`→`png,jpg,jpeg,webp,gif`, or the literal extension
    - a name fragment (`keema`, `brochure`) → `--match <fragment>`
@@ -37,7 +37,7 @@ AskUserQuestion options instead of guessing.
 Always open through the helper so the app choice is consistent:
 
 ```bash
-python ~/.claude/open-it/open_it.py "<full path>"
+python ~/.claude/tools/open-it/open_it.py "<full path>"
 ```
 
 App map (in `open_it.py`): `.html/.htm/.pdf/.svg` → Chrome · video & audio →
